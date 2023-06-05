@@ -10,8 +10,7 @@ d’articles, son prix hors taxe et un taux de TVA (exprimé en décimal. Ex : 2
 
 $prixUnitaire = 9.99;
 $Quantite = 5;
-$TVA = 0.2;
-
+$TVA = 0.20;
 
 
 ?>
