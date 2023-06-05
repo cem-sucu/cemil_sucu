@@ -8,7 +8,8 @@ Attention, la valeur générée devra être arrondie à 2 décimales.
 
 <?php 
 
-
+$conversionFranc = ($franc / 6.55);
+$convertirEuro = ($euro * 6.55);
 
 
 ?>
