@@ -22,4 +22,8 @@ if($age <= 6 || $age >=7 ){
 }
 
 
+if($age >12 ){
+echo "La catégorie n'estpas géré";
+} else if ($age<=12 )
+
 ?>

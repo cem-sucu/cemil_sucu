@@ -8,8 +8,10 @@ Attention, la valeur générée devra être arrondie à 2 décimales.
 
 <?php 
 
-$conversionFranc = (100 / 6.55);
-$conversionEuro = (100 * 6.55);
+$valeur = 100;
+
+$conversionFranc = ($valeur / 6.55);
+$conversionEuro = ($valeur * 6.55);
 echo "100 euro en franc égale à $conversionFranc<br>";
 echo "100 franc en euro égale à $conversionEuro";
 
