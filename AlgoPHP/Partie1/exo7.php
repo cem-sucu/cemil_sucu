@@ -7,13 +7,13 @@
 
 <?php
 
-$age = 9;
+$age = 1;
 
-if($age <= 6 && $age >=7 ){
+if($age <= 6 || $age >=7 ){
     echo "Poussin";
-} elseif($age <=8 && $age >=9){
+} elseif($age <=8 || $age >=9){
     echo "Pupille";
-} elseif($age <=10 && $age >=11){
+} elseif($age <=10 || $age >=11){
     echo "Minimime";
 } elseif($age <=12){
     echo "Cadet";

@@ -10,7 +10,11 @@ d’articles, son prix hors taxe et un taux de TVA (exprimé en décimal. Ex : 2
 
 $prixUnitaire = 9.99;
 $Quantite = 5;
+$nbrProduit =  $Quantite * $prixUnitaire;
 $TVA = 0.20;
 
+$total = ($prixUnitaire / 100) * 20;
+
+echo "Le montant de la facture est de $total €";
 
 ?>
