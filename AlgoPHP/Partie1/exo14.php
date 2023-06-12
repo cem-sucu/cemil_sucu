@@ -5,10 +5,10 @@
 <h2>Résultat</h2>
 
 <?php
-$date = new DateTime('2018-05-21');
+$date = new DateTime();
 
 
-$dateDeNaissance = new DateTime("1985-01-17");
+$dateDeNaissance = new DateTime("1994-07-07");
 
 
 
