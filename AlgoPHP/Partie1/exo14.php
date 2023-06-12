@@ -16,7 +16,4 @@ $interval = $date->diff($dateDeNaissance);
 echo $interval->format(' Age de la personne : %Y ans, %M mois et %D jours');
 
 
-
-
-
 ?>
