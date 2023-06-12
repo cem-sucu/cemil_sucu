@@ -6,10 +6,17 @@
 
 <?php
 $date = new DateTime('2018-05-21');
-echo $date->format('Y-m-d <br>');
+
 
 $dateDeNaissance = new DateTime("1985-01-17");
-echo $dateDeNaissance->format('Y-m-d');
+
+
+
+$interval = $date->diff($dateDeNaissance);
+echo $interval->format(' Age de la personne : %Y ans, %M mois et %D jours');
+
+
+
 
 
 ?>

@@ -28,15 +28,16 @@ Class Personne{
    public function getNom(){
     return $this->_nom;
    }
-   public function setNom(string $nom){
-     $this->_nom = $nom;
-   }
+//    public function setNom(string $nom){
+//      $this->_nom = $nom;
+//    }
 }
 $p1 = new Personne("DUPONT", "Michel", "1980-02-19");
 $p2 =new Personne("DUCHEMIN","Alice", "1985-01-17");
 
-$p1->setNom("nouveauNom");
+// $p1->setNom("nouveauNom");
+
 echo $p1;
-echo $p2;
+
 
 ?>
