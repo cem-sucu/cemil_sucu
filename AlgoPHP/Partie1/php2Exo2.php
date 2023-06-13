@@ -4,29 +4,42 @@
 
 <h2>Résultats</h2>
 
-<table border="2" style="border:black 1px solid">
-    <tr >
-        <th >
-            Pays
-        </th>
-
-        <th >
-            Capital
-        </th>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
 
 <?php
 
+$capitales = array("France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome");
 
-function afficherTableHTML(string $capitales){
-    $capitales= array ("France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome");
+afficherTableHTML($capitales);
 
-    echo "<table><tr><th>.$capitales</th></tr></table>";
+function afficherTableHTML(array $tableau){
+
+    // mauvaise pratique
+    //echo "<table><tr><th>.$capitales</th></tr></table>";
+    // fin mauvaise pratique
+    $key = "Pays";
+    $value = "Capital";
+
+?>
+    <table border="2" style="border:black 1px solid">
+        <tr >
+            <th >
+            <?= $key ?>
+            </th>
+            <th >
+                <?= $value ?>
+            </th>
+        </tr>
+        <?php foreach($tableau as $pays => $capitales){
+?>
+            <tr>
+            <td><?= $pays?></td>
+            <td><?= $capitales?></td>
+        </tr>
+<?php
+    }
+?>
+    </table>
+<?php
     
 }
 
