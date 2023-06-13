@@ -16,7 +16,7 @@ function afficherInput(array $nomsInput) {
             <label>
                 <?= $nom  ?>
             </label><br>
-            <input type="text" name="<?php echo $nom; ?>"><br>
+            <input type="text" name="<?= $nom ?>"><br>
         <?php } ?>
         <input type="submit" value="Envoyer">
     </form>
