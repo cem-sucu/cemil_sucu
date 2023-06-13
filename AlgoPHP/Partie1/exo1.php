@@ -10,3 +10,5 @@ $phrase = "Notre formation DL commmence aujourd'hui";
 $longueur = strlen($phrase);
 echo "La phrase $phrase contient $longueur caractères<br>";
 echo "La phrase $phrase contient ". strlen($phrase). " caractère<br>";
+
+?>
