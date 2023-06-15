@@ -56,9 +56,10 @@ class Voiture {
 class VoitureElec extends Voiture{
     private int $autonomie;
     
+// ici avec parent:: cela permet de récupérer les propriété parents de la classe mere
     public function __construct(string $marque, string $modele, int $autonomie){
-        parent::__construct($marque, $modele, $autonomie);
-        $this->autonomie = 0;
+        parent::__construct($marque, $modele);
+        $this->autonomie = $autonomie;
     }
     // on créé le getter et setter de autonomie
     public function getAutonomie(){
@@ -68,7 +69,11 @@ class VoitureElec extends Voiture{
         return $this-> autonomie = $autonomie;
     }
     
-    
+//ici parent::getInfos() permet de récupérer la function getInfos dans la class parents
+    public function getInfos(){
+        return  parent::getInfos() ." l'autonomie est de ".$this->autonomie ;
+    }
+
 }
 
 $v1 = new Voiture("Peugeot", 408);
